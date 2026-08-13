@@ -7,7 +7,8 @@
     "esModuleInterop": true,      // 允许 import CommonJS 模块
     "skipLibCheck": true,         // 跳过库文件的类型检查（加速编译）
     "outDir": "./dist",           // 编译输出目录
-    "rootDir": "./src"            // 源代码目录
+    "rootDir": "./",           // 源代码目录
+    "types": ["node"]             // 包含 Node.js 类型定义
   },
-  "include": ["src/**/*"]         // 包含的文件
+  "include": ["src/**/*", "scripts/**/*"]  // 增加包含的文件
 }
